@@ -50,4 +50,4 @@ create trigger on_signup after insert on auth.users
   for each row execute function handle_new_user();
 
 -- Өөрийгөө админ болгох (имэйлээ солиод ажиллуулна):
--- update profiles set role='admin' where id=(select id from auth.users where email='ta@example.mn');
+   update profiles set role='admin' where id=(select id from auth.users where email='あなたのメール');
